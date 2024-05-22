@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CategoryArchiveVM>
+
+<div class="container mt-5">
+    <h2 class="text-center"> Categories Archive</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Created Date</th>
+                    <th scope="col">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="category-data">
+                        <td>@item.CategoryName</td>
+                        <td>@item.CreatedDate</td>
+                        <td>
+
+                            <form class="d-inline" method="post" asp-area="Admin" asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id">
+                                <button type="submit" class="btn btn-danger"><i class="zmdi zmdi-block"></i></button>
+                            </form>
+                            <a class="btn btn-secondary add-restore" data-id="@item.Id">Restore</a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section js{
+    <script src="~/admin/assets/js/archive.js"></script>
+}
+

@@ -1,0 +1,68 @@
+﻿<Properties StartupConfiguration="{959D9549-42FB-4248-A391-1B6D5E20A4A2}|Default">
+  <MonoDevelop.Ide.ItemProperties.Fiorella PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Fiorella/Controllers/CartController.cs">
+    <Files>
+      <File FileName="Fiorella/Controllers/HomeController.cs" Line="95" Column="43" />
+      <File FileName="Fiorella/wwwroot/js/basket.js" Line="12" Column="81" />
+      <File FileName="Fiorella/Views/Shared/Components/Header/Default.cshtml" Line="144" Column="75" />
+      <File FileName="Fiorella/Controllers/CartController.cs" Line="37" Column="1" />
+      <File FileName="Fiorella/Views/Cart/Index.cshtml" Line="30" Column="30" />
+      <File FileName="Fiorella/Areas/Admin/Controllers/BlogController.cs" Line="196" Column="32" />
+      <File FileName="Fiorella/Areas/Admin/Controllers/CategoryController.cs" Line="1" Column="1" />
+      <File FileName="Fiorella/Services/ProductService.cs" Line="1" Column="1" />
+      <File FileName="Fiorella/ViewModels/Baskets/BasketVM.cs" Line="9" Column="1" />
+      <File FileName="Fiorella/Views/_ViewImports.cshtml" Line="4" Column="35" />
+      <File FileName="Fiorella/ViewModels/Baskets/BasketCartVM.cs" Line="11" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Fiorella" expanded="True">
+            <Node name="Fiorella" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Archive" expanded="True" />
+                    <Node name="Blog" expanded="True" />
+                    <Node name="Category" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="CartController.cs" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="Baskets" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Cart" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Header" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/fatimagaykhanova/Desktop/Fiorella/Fiorella/Areas/Admin/Controllers/CategoryController.cs" relfile="Fiorella/Areas/Admin/Controllers/CategoryController.cs" line="126" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
