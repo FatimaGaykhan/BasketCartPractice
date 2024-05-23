@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Fiorella.Models;
 using Fiorella.Services.Interfaces;
 using Fiorella.ViewModels.Baskets;
 using Microsoft.AspNetCore.Mvc;
@@ -23,23 +24,22 @@ namespace Fiorella.Controllers
 
         public async Task<IActionResult> Index()
         {
-            List<BasketCartVM> basketdatas = JsonConvert.DeserializeObject<List<BasketCartVM>>(_accessor.HttpContext.Request.Cookies["basket"]);
 
-            BasketCartVM model;
+            var basketDatasJson = _accessor.HttpContext.Request.Cookies["basket"];
 
-            foreach (var item in basketdatas)
+            if (string.IsNullOrEmpty(basketDatasJson))
             {
-                 model = new()
-                {
-                    Id =item.Id,
-                    Description=item.Description,
-                    Price=item.Price
-
-                };
+                return View(new List<BasketCartVM>());
             }
 
-            return View(basketdatas);
+            List<BasketCartVM> basketDatas = JsonConvert.DeserializeObject<List<BasketCartVM>>(basketDatasJson);
+
+            return View(basketDatas);
+
         }
+
+        
+        
     }
 }
 

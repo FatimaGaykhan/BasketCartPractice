@@ -8,7 +8,10 @@ namespace Fiorella.ViewModels.Baskets
 		public string ProductName { get; set; }
 		public string Image { get; set; }
 		public string Description { get; set; }
+		public string Category { get; set; }
+        public int Count { get; set; }
 
-	}
+
+    }
 }
 

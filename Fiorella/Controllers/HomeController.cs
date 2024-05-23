@@ -56,15 +56,15 @@ public class HomeController : Controller
 
         if (product is null) return NotFound();
 
-        List<BasketVM> basketDatas;
+        List<BasketCartVM> basketDatas;
 
         if (_accessor.HttpContext.Request.Cookies["basket"] is not null)
         {
-            basketDatas = JsonConvert.DeserializeObject<List<BasketVM>>(_accessor.HttpContext.Request.Cookies["basket"]);
+            basketDatas = JsonConvert.DeserializeObject<List<BasketCartVM>>(_accessor.HttpContext.Request.Cookies["basket"]);
         }
         else
         {
-            basketDatas = new List<BasketVM>();
+            basketDatas = new List<BasketCartVM>();
         }
 
         var existbasketData = basketDatas.FirstOrDefault(m => m.Id == id);
@@ -75,10 +75,12 @@ public class HomeController : Controller
         }
         else
         {
-            basketDatas.Add(new BasketVM
+            basketDatas.Add(new BasketCartVM
             {
                 Id = (int)id,
                 Price = product.Price,
+                ProductName=product.Name,
+                Category=product.Category.Name,
                 Count = 1
             });
 
